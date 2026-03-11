@@ -49,49 +49,49 @@ public class CoordinatePocketComputerAPI implements ILuaAPI {
 
     @LuaFunction
     public final double getThisPocketComputerOwnerYRot() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getYRot();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleX() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().x();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleY() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().y();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerLookAngleZ() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getLookAngle().z();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosX() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getForward().x();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosY() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getForward().y();
         } else return 0.0;
     }
 
     @LuaFunction
     public final double getThisPocketComputerOwnerForwardPosZ() {
-        if (isOnPhone) {
+        if (isOnPhone && holder instanceof PocketHolder.EntityHolder) {
             return ((PocketHolder.EntityHolder) holder).entity().getForward().z();
         } else return 0.0;
     }
